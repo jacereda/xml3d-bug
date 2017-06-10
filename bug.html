@@ -1,0 +1,26 @@
+<html><head>
+    <script src="http://www.xml3d.org/xml3d/script/xml3d.js"></script>
+  </head>
+  <body>
+    <div>
+      <select onchange="document.getElementById('model').setAttribute('src', 'http://xml3d.github.io/xml3d-examples/examples/assets/res/assets.xml#' + this.value);">
+	<option>heavy</option>
+	<option>engineer</option>
+	<option>medic</option>
+	<option>scout</option>
+	<option>sniper</option>
+      </select>
+      <div class="_xml3d_hideDiv">
+	<xml3d>
+	  <defs>
+	    <transform id="cameraTransform" translation="0.0 0.0 250.0 "></transform>
+	  </defs>
+	  <view transform="#cameraTransform" model="urn:xml3d:view:perspective" id="Generated_View_0">
+	  </view>
+	  <model id="model" src="http://xml3d.github.io/xml3d-examples/examples/assets/res/assets.xml#heavy"></model>
+	  </group>
+	</xml3d>
+      </div>
+    </div>
+  </body>
+</html>
